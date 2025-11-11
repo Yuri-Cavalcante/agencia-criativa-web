@@ -95,7 +95,7 @@ main {
 }
 
 #servicos {
-    margin: 2rem 2rem 2rem 2rem;
+    margin: 2rem;
     padding: 1rem 3rem;
     align-items: center;
     border: solid black 3px;
@@ -222,6 +222,13 @@ main {
     justify-content: space-around;
 }
 
+#container-info-formulario div {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+}
+
 form {
     padding: 0 2rem;
     display: flex;
@@ -234,4 +241,91 @@ form button {
     align-self: center;
 }
 
+/* MEDIA QUERIES */
 
+/* PEQUENO */
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    h4 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    /* HEADER */
+    
+    header {
+        padding: 1rem 3rem;
+        flex-direction: column;
+    }    
+    
+    nav {
+        margin: 0;
+        padding: 0.5rem;
+        gap: 1rem;
+    }
+
+    button {
+        padding: 0.5rem;
+        font-size: 0.75rem;
+    }
+
+    /* MAIN */
+
+    main {
+        margin-top: 11rem;
+    }
+
+    #home {
+        margin: 0.5rem 1rem;
+    }
+
+    #sobre {
+        
+    }
+
+    /* SERVICOS */
+
+    #servicos {
+    
+    }
+
+
+    #fase-reconhecimento {
+        padding: 1rem 0;
+        display: grid;
+        grid-template-columns: auto 1fr 1fr;
+        align-items: center;
+    }
+
+    #fase-reconhecimento div {
+        margin-left: 3rem;
+        grid-column: 2/4;
+    }
+}
+
+/* MEDIO */
+
+@media (min-width: 601px) and (max-width: 900px){
+    
+}
+
+/* GRANDE */
+
+@media (min-width: 901px) {
+    
+}
