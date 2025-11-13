@@ -104,6 +104,10 @@ main {
 
 /* reconhecimento */
 
+#fase-reconhecimento-sf {
+    display: none;
+}
+
 #fase-reconhecimento {
     padding: 1rem 0;
     display: grid;
@@ -117,6 +121,10 @@ main {
 }
 
 /* proposta */
+
+#fase-proposta-sf {
+    display: none;
+}
 
 #fase-proposta {
     padding: 1rem 0 2rem 0;
@@ -247,11 +255,11 @@ form button {
 
 @media (max-width: 600px) {
     h1 {
-        font-size: 2rem;
+        font-size: 2.2rem;
     }
 
     h2 {
-        font-size: 1.8rem;
+        font-size: 2rem;
     }
 
     h3 {
@@ -300,22 +308,59 @@ form button {
 
     /* SERVICOS */
 
-    #servicos {
-    
+    #servicos p {
+        text-align: justify;
+        hyphens: auto;
     }
 
+    #servicos div{
+        margin-bottom: 2rem;
+    }
 
     #fase-reconhecimento {
-        padding: 1rem 0;
-        display: grid;
-        grid-template-columns: auto 1fr 1fr;
-        align-items: center;
+        display: none;
     }
 
-    #fase-reconhecimento div {
-        margin-left: 3rem;
-        grid-column: 2/4;
+    #fase-reconhecimento-sf {
+        display: flex;
+        flex-direction: column;
     }
+
+    #fase-reconhecimento-sf img {
+        margin-bottom: 1rem;
+        width: 75%;
+        align-self: center;
+    }
+    
+    /* PROPOSTA */
+    
+    #fase-proposta {
+        display: none;
+    }
+
+    #fase-proposta-sf {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #fase-proposta-sf img {
+        margin-bottom: 1rem;
+        width: 75%;
+        align-self: center;
+    }
+
+    #container-propostas {
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #container-propostas div {
+        margin: 0;
+        width: 50vw;
+        align-self: center;
+    }
+
 }
 
 /* MEDIO */
