@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agência-Criativa-Web</title>
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="estilo-padrão.css">
+    <link rel="stylesheet" href="estilo-sf.css">
+    <link rel="stylesheet" href="estilo-ts.css">
 </head>
 <body>
     <header>
-        <img src="logo.png" alt="">
+        <img src="imagens/logo.png" alt="">
         <nav>
-            <a href="#sobre"><button>Sobre Nós</button></a>
+            <a href="#sobre"><button>Sobre</button></a>
             <a href="#servicos"><button>Serviços</button></a>
             <a href="#depoimentos"><button>Depoimentos</button></a>
             <a href="#contato"><button>Contato</button></a>
@@ -21,6 +23,7 @@
             <h1>Bem-vindo a Agência Criativa Web</h1>
             <p>Uma agêcia de serviços de design gráfico para desenvolvedores.</p>
         </section>
+
         <section id="sobre">
             <h2>Trabalho e Missão</h2>
             <p>Alguns dos desafios que muitos deselvolvedores já passaram são a estética e a arte.</p>
@@ -28,21 +31,22 @@
             <p>Oferecemos serviços de design gráfico personalizados e feitos sob medida para cada cliente.</p>
         </section>
         <section id="servicos">
-            <div>
+            <div id="titulo-servicos">
                 <h2>Serviços</h2>
-                <p>Entendemos que o melhor jeito de resolver os problemas de um cliente é conhecendo seu contexto, assim nossa tratativa é feita em 3 fases, reconhecimento, proposta, e aplicação.</p>
+                <p>Entendemos que o melhor jeito de resolver os problemas de um cliente é conhecendo seu contexto, assim nossa tratativa é feita em 3 fases,s reconhecimento, proposta, e aplicação.</p>
             </div>
 
             <div id="fase-reconhecimento">
-                <img src="pesquisa.png" alt="">
+                <img src="imagens/pesquisa.png" alt="">
                 <div>
                     <h3>Reconhecimento</h3>
                     <p>Nossos assessores e analistas vão iniciar o processo de reconhecimento, eles estudarão seu caso(in loco se requisitado) e vão listar soluções de acordo com suas necessidades.</p>
                 </div>
             </div>
+            
             <div id="fase-reconhecimento-sf">
                 <h3>Reconhecimento</h3>
-                <img src="pesquisa.png" alt="">                    
+                <img src="imagens/pesquisa.png" alt="">                    
                 <p>Nossos assessores e analistas vão iniciar o processo de reconhecimento, eles estudarão seu caso(in loco se requisitado) e vão listar soluções de acordo com suas necessidades.</p>
             </div>
 
@@ -54,7 +58,7 @@
                     <p>Com base nos resultados, vamos ofertar o serviço que for mais adequado, ou caso seja, montar um serviço totalmente personalizado junto ao cliente. NA PRIMEIRA E SEGUNDA FASE NÃO SERÁ COBRADA NENHUMA TAXA OU PAGAMENTO.</p>
                 </div>
                 
-                <img src="proposta.png" alt="">
+                <img src="imagens/proposta.png" alt="">
 
                 <div id="container-propostas">
                     <div>  
@@ -78,7 +82,7 @@
 
             <div id="fase-proposta-sf">
                 <h3>Proposta</h3>
-                <img src="proposta.png" alt="">
+                <img src="imagens/proposta.png" alt="">
                 <p>Com base nos resultados, vamos ofertar o serviço que for mais adequado, ou caso seja, montar um serviço totalmente personalizado junto ao cliente. NA PRIMEIRA E SEGUNDA FASE NÃO SERÁ COBRADA NENHUMA TAXA OU PAGAMENTO.</p>
                 
                 <div id="container-propostas">
@@ -101,42 +105,52 @@
                 </div>
             </div>
 
-
             <div id="divisoria"></div>
 
             <div id="fase-aplicacao">                
-                <img src="aplicacao.png" alt="">
+                <img src="imagens/aplicacao.png" alt="">
                 <div>
                     <h3>Aplicação</h3>
                     <p>Essa é a fase onde o serviço é feito, será designado um supervisor pro seu projetado, ele será sua linha direta com a agêcia, todo o processo de feedback, dúvidas, mudanças e etc serão tratadas com ele, assim sendo até a finalização do projeto.</p>
                 </div>
             </div>            
+
+            <div id="fase-aplicacao-sf">
+                <h3>Aplicação</h3>
+                <img src="imagens/aplicacao.png" alt="">
+                <p>Essa é a fase onde o serviço é feito, será designado um supervisor pro seu projetado, ele será sua linha direta com a agêcia, todo o processo de feedback, dúvidas, mudanças e etc serão tratadas com ele, assim sendo até a finalização do projeto.</p>
+            </div>
         </section>
+
         <section id="depoimentos">
             <h2>Depoimentos de clientes</h2>
+
             <div id="container-avaliacao">
                 <div id="perfil-nome">
-                    <img src="foto-perfil.png" alt="">
+                    <img src="imagens/foto-perfil.png" alt="">
                     <h4>Maurício Almeida da Costa - desenvolver em Kotlin</h4>
                 </div>
                 <p>Sempre tive dificuldade em questões de identidade visual, qual ícone fica melhor, qual resolução usar, qual paleta de cor usar. Isso custava muito tempo e atrasava meus lançamentos, mas depois que conheci a Criativa minha produtividade quase triplicou.</p>
             </div>
+
             <div id="container-avaliacao">
                 <div id="perfil-nome">
-                    <img src="foto-perfil-2.png" alt="">
+                    <img src="imagens/foto-perfil-2.png" alt="">
                     <h4>Pedro Ribeiro Miller - desenvolvedor JavaScript fullstack</h4>
                 </div>
                 <p>Dominar qualquer software de design gráfico leva muito tempo e energia, o problema é que programar também,e se você tenta fazer tudo acaba que nada sai da melhor forma que poderia. Quando contratei a Criativa fiquei recioso de não entenderem minha estética e estilo, essa foi uma das vezes que gostei de estar errado, agora sou um cliente fiel e permanete.</p>
             </div>
+
             <div id="container-avaliacao">
                 <div id="perfil-nome">
-                    <img src="foto-perfil-3.png" alt="">
+                    <img src="imagens/foto-perfil-3.png" alt="">
                     <h4>André Cavalcante Braga Neto - desenvolvedor em C# e C++</h4>
                 </div>
                 <p>Sendo sincero, sempre tive muita preguiça de fazer qualquer coisa relacionada a arte, desenho, design, modelagem e etc, e quando você faz alguma coisa de má vontado, o resultado fica longe de OK. A Criativa me ofereu uma solução eficiente por um preço rasoável,desde então eles tem minha lealdade como cliente.</p>
             </div>
         </section>
     </main>
+
     <footer id="contato">
         <div id="container-info-formulario">
             <div>

@@ -40,7 +40,7 @@ h4 {
 p {
     font-size: 1.4rem;
     text-align: justify;
-    hyphens: auto;
+    hyphens: manual;
 }
 
 #divisoria {
@@ -69,7 +69,7 @@ nav {
     padding: 1rem;
     display: flex;
     gap: 2rem;
-    align-content: center;
+    justify-content: center;
 }
 
 button {
@@ -101,6 +101,8 @@ main {
     gap: .5rem;
 }
 
+/* SERVICOS */
+
 #servicos {
     margin: 2rem;
     padding: 1rem 3rem;
@@ -113,7 +115,7 @@ main {
     margin-bottom: 2rem;
 }
 
-/* reconhecimento */
+/* RECONHECIMENTO */
 
 #fase-reconhecimento-sf {
     display: none;
@@ -130,7 +132,7 @@ main {
     grid-column: 2/4;
 }
 
-/* proposta */
+/* PROPOSTA */
 
 #fase-proposta-sf {
     display: none;
@@ -160,7 +162,6 @@ main {
     grid-column: 1/4;
     grid-row: 2/3;
     display: flex;
-    justify-content: center;
     gap: 2rem;
 }
 
@@ -175,7 +176,7 @@ main {
     margin-bottom: 0.5rem;
 }
 
-/* aplicacao */
+/* APLICACAO */
 
 #fase-aplicacao-sf {
     display: none;
@@ -253,174 +254,4 @@ form {
 form button {
     width: fit-content;
     align-self: center;
-}
-
-/* MEDIA QUERIES */
-
-/* PEQUENO */
-
-@media (max-width: 600px) {
-    h1 {
-        font-size: 2.2rem;
-    }
-
-    h2 {
-        font-size: 2rem;
-    }
-
-    h3 {
-        font-size: 1.5rem;
-    }
-
-    h4 {
-        font-size: 1.2rem;
-    }
-
-    p {
-        font-size: 1rem;
-    }
-
-    /* HEADER */
-    
-    header {
-        padding: 1rem 3rem;
-        flex-direction: column;
-    }    
-    
-    nav {
-        margin: 0;
-        padding: 0.5rem;
-        gap: 1rem;
-    }
-
-    button {
-        padding: 0.5rem;
-        font-size: 0.75rem;
-    }
-
-    /* MAIN */
-
-    main {
-        margin-top: 11rem;
-    }
-
-    #home {
-        margin: 0.5rem 1rem;
-    }
-
-    #sobre {
-        
-    }
-
-    /* SERVICOS */
-
-    #servicos p{
-        text-align: justify;
-        hyphens: auto;
-    }
-
-    #titulo-servicos{
-        margin-bottom: 2rem;
-    }
-
-    #fase-reconhecimento {
-        display: none;
-    }
-
-    #fase-reconhecimento-sf {
-        display: flex;
-        flex-direction: column;
-    }
-
-    #fase-reconhecimento-sf img {
-        margin-bottom: 1rem;
-        width: 75%;
-        align-self: center;
-    }
-    
-    /* PROPOSTA */
-    
-    #fase-proposta {
-        display: none;
-    }
-
-    #fase-proposta-sf {
-        margin: 0;
-        display: flex;
-        flex-direction: column;
-    }
-
-    #fase-proposta-sf img {
-        width: 75%;
-        align-self: center;
-    }
-
-    #container-propostas {
-        margin-top: 2rem;
-        display: flex;
-        flex-direction: column;
-    }
-
-    #container-propostas div {
-        margin: 0;
-        width: 50vw;
-        align-self: center;
-    }
-
-    /* APLICACAO */
-
-    #fase-aplicacao {
-        display: none;
-    }
-
-    #fase-aplicacao-sf {
-        display: flex;
-        flex-direction: column;
-    }
-
-    #fase-aplicacao-sf img {
-        width: 75%;
-        align-self: center;
-    }
-
-    /* DEPOIMENTOS */
-
-    #container-avaliacao {
-        margin-bottom: 2rem;
-    }
-
-    #perfil-nome img {
-        width: 125%;
-    }
-
-    #perfil-nome h4 {
-        font-size: 1.1rem;      
-    }
-
-    /* CONTATO */
-
-    #container-info-formulario {
-        display: flex;
-        flex-direction: column;
-    }
-
-    #container-info-formulario div {
-        gap: 0;
-    }
-
-    #formulario {
-        margin-top: 2rem;
-    }
-}
-
-/* MEDIO */
-
-@media (min-width: 601px) and (max-width: 900px){
-    
-}
-
-/* GRANDE */
-
-@media (min-width: 901px) {
-    
 }

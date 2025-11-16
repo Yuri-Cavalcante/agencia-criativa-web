@@ -1,0 +1,145 @@
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    h4 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 1rem;
+        text-align: justify;
+        hyphens: auto;
+    }
+
+    /* HEADER */
+    
+    header {
+        padding: 1rem 3rem;
+        flex-direction: column;
+    }    
+    
+    nav {
+        margin: 0;
+        padding: 0.5rem;
+        gap: 1rem;
+    }
+
+    button {
+        padding: 0.5rem;
+        font-size: 0.75rem;
+    }
+
+    /* MAIN */
+
+    main {
+        margin-top: 11rem;
+    }
+
+    #home {
+        margin: 0.5rem 1rem;
+    }
+
+    /* SERVICOS */
+
+    #titulo-servicos{
+        margin-bottom: 2rem;
+    }
+
+    #fase-reconhecimento {
+        display: none;
+    }
+
+    #fase-reconhecimento-sf {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #fase-reconhecimento-sf img {
+        margin-bottom: 1rem;
+        width: 75%;
+        align-self: center;
+    }
+    
+    /* PROPOSTA */
+    
+    #fase-proposta {
+        display: none;
+    }
+
+    #fase-proposta-sf {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #fase-proposta-sf img {
+        width: 75%;
+        align-self: center;
+    }
+
+    #container-propostas {
+        margin-top: 2rem;
+        flex-direction: column;
+    }
+
+    #container-propostas div {
+        margin: 0;
+        width: 50vw;
+        align-self: center;
+    }
+
+    /* APLICACAO */
+
+    #fase-aplicacao {
+        display: none;
+    }
+
+    #fase-aplicacao-sf {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #fase-aplicacao-sf img {
+        width: 75%;
+        align-self: center;
+    }
+
+    /* DEPOIMENTOS */
+
+    #container-avaliacao {
+        margin-bottom: 2rem;
+    }
+
+    #perfil-nome img {
+        width: 115%;
+    }
+
+    #perfil-nome h4 {
+        font-size: 1rem;      
+    }
+
+    /* CONTATO */
+
+    #container-info-formulario {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #container-info-formulario div {
+        gap: 0;
+    }
+
+    #formulario {
+        margin-top: 2rem;
+    }
+}
