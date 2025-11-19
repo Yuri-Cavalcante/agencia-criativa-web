@@ -34,27 +34,28 @@
     /* MAIN */
 
     main {
-        margin-top: 17rem;
+        margin-top: 15rem;
+    }
+
+    #home {
+        margin: 0.5rem 1rem;
     }
     
-    /* SERVICOS */
-
-    #servicos {
-
-    }
-
     /* PROPOSTA */
 
+    #texto-proposta {
+        padding-bottom: 1rem;
+    }
+
     #container-propostas {
+        margin-top: 1rem;
         flex-direction: row;
         flex-wrap: wrap;
+        justify-content: center;
     }
     
     #container-propostas div {
-        width: 35vw;
+        width: 33vw;
     }
 
-    #container-propostas:nth-child(-n + 2) {
-
-    }
 }

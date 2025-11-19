@@ -11,7 +11,8 @@ body, html {
 }
 
 body {
-    background-color: gray;
+    background-color: #273555;
+    color: rgb(220, 220, 220);
 }
 
 h1,h2,h3,h4 {
@@ -47,7 +48,8 @@ p {
     margin: 2rem 0;
     height: 5px;
     width: 100%;
-    background: linear-gradient(90deg, black,white 45% 55%, black);
+    background: linear-gradient(90deg, rgb(136, 136, 136),white 45% 55%, black);
+    border-radius: 5px;
 }
 
 /* HEADER */
@@ -61,7 +63,13 @@ header {
     gap: 1rem;
     align-content: center;
     justify-content: center;
-    background-color: rgb(172, 172, 172);
+    z-index: 1;
+    background-color: rgb(72, 90, 136);
+}
+
+.header-fosco {
+    background-color: rgba(63, 77, 111, 0.6);    
+    backdrop-filter: blur(5px);
 }
 
 nav {
@@ -75,6 +83,33 @@ nav {
 button {
     padding: 0.5rem;
     font-size: 1rem;
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer;
+    border: none;
+    z-index: 0;
+}
+
+button::after {
+    content: '';
+    background-color: black;
+    height: 0px;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    border-radius: 5px;
+    z-index: -1;
+    transition: 200ms ease-in-out;
+}
+
+button:hover::after {
+    height: 100%;
+}
+
+button:hover {
+    color: white;
 }
 
 /* MAIN */
@@ -107,8 +142,10 @@ main {
     margin: 2rem;
     padding: 1rem 3rem;
     align-items: center;
+    background-color: #36425f;
     border: solid black 3px;
     border-radius: 10px;
+    z-index: -2;
 }
 
 #titulo-servicos {
@@ -165,15 +202,60 @@ main {
     gap: 2rem;
 }
 
-#container-propostas div {
+#frame-proposta {
     width: 20vw;
     padding: 1rem;
-    border: 3px black solid;
+    position: relative;
+    background-color: #36425f;
     border-radius: 15px;
 }
 
-#container-propostas div h4 {
+@property --angle{
+    syntax: '<angle>';
+    initial-value: 0deg; 
+    inherits: false;
+}
+
+#frame-proposta::after, #frame-proposta::before {
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    background-image: conic-gradient(from var(--angle), #ff0000, #009DFF,red);
+    border-radius: 15px;
+    z-index: -1;
+    transition: 200ms ease-in-out;
+    padding: 4px;
+    animation: 3s spin linear infinite;
+}
+
+#frame-proposta:last-child::after, #frame-proposta:last-child::before {
+    background-image: conic-gradient(from var(--angle), #BB22F5, #22F599,#F5B423,#BB22F5);
+}
+
+#frame-proposta::before  {
+    filter: blur(1.5rem);
+    opacity: 0.5;
+}
+
+@keyframes spin {
+    from {
+        --angle: 0deg;
+    }
+    to {
+        --angle: 360deg;
+    }
+}
+
+#frame-proposta h4 {
     margin-bottom: 0.5rem;
+}
+
+#frame-proposta p {
+    text-align: center;
 }
 
 /* APLICACAO */
@@ -205,6 +287,7 @@ main {
     flex-direction: column;
     align-items: center;
     gap: 1rem;
+    background-color: #36425f;
     border: solid black 3px;
     border-radius: 10px;
 }
@@ -225,7 +308,7 @@ main {
 
 #contato {
     padding: 2rem;
-    background-color: rgb(181, 181, 181);
+    background-color: #3f4d6f;
 }
 
 #contato h4{
@@ -249,6 +332,14 @@ form {
     display: flex;
     flex-direction: column;  
     gap: .5rem;
+}
+
+label {
+    font-size: 1.5rem;
+}
+
+input, textarea{
+    font-size: 1rem;
 }
 
 form button {
