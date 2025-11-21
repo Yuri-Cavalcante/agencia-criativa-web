@@ -21,9 +21,14 @@
 
     /* HEADER */
 
+    
     header {
         padding: 2rem 3rem 1rem 3rem;
         flex-direction: column;
+    }
+
+    nav {
+        margin: 0;
     }
 
     button {

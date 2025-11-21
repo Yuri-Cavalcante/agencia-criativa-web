@@ -12,7 +12,7 @@ body, html {
 
 body {
     background-color: #273555;
-    color: rgb(220, 220, 220);
+    color: #dcdcdc;
 }
 
 h1,h2,h3,h4 {
@@ -20,7 +20,6 @@ h1,h2,h3,h4 {
 }
 
 h1 {
-    margin-bottom: 1rem;
     font-size: 3rem;
 }
 
@@ -48,7 +47,7 @@ p {
     margin: 2rem 0;
     height: 5px;
     width: 100%;
-    background: linear-gradient(90deg, rgb(136, 136, 136),white 45% 55%, black);
+    background: linear-gradient(90deg, rgb(0, 0, 0),rgb(234, 234, 234) 45% 55%, black);
     border-radius: 5px;
 }
 
@@ -61,7 +60,7 @@ header {
     top: 0px;
     display: flex;
     gap: 1rem;
-    align-content: center;
+    align-items: center;
     justify-content: center;
     z-index: 1;
     background-color: rgb(72, 90, 136);
@@ -78,6 +77,48 @@ nav {
     display: flex;
     gap: 2rem;
     justify-content: center;
+}
+
+#logo-nav {
+    position: relative;
+}
+
+#logo-nav::after {
+    content: '';
+    height: .5rem;
+    width: .5rem;
+    background-color: #ff7300;
+    opacity: 0;
+    left: 0;
+    bottom: 0;
+    translate: 0 125%;
+    border-radius: 1rem;
+    position: absolute;
+    transition: 400ms ease-in-out;
+}
+
+#logo-nav:hover::after {
+    width: 100%;
+    opacity: 1;
+}
+
+#logo-nav::before {
+    content: '';
+    height: .5rem;
+    width: .5rem;
+    background-color: #ff7300;
+    opacity: 0;
+    right: 0;
+    translate: 0 -125%;
+    border-radius: 1rem;
+    position: absolute;
+    transition: 400ms ease-in-out;
+}
+
+#logo-nav:hover:before {
+    width: 100%;
+    opacity: 1;
+    /* filter: blur(.10rem); */
 }
 
 button {
@@ -123,6 +164,45 @@ main {
 #home {
     margin-bottom: 0.5rem;
     padding: 0.5rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#home div {
+    margin-bottom: 1rem;
+    height: auto;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    position: relative;
+    z-index: 0;
+}
+
+#home div h1 {
+    padding: .5rem 1rem;
+    height: fit-content;
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+    mix-blend-mode: lighten;
+    position: relative;
+    z-index: 2;
+}
+
+#home div::after {
+    content: '';
+    height: 100%;
+    width: 0;
+    background-color: #f5a208;
+    position: absolute;
+    z-index: 1;
+    transition: 250ms ease-in-out;
+}
+
+#home div:hover:after {
+    width: 100%;
 }
 
 #home p, #sobre p{
@@ -145,7 +225,6 @@ main {
     background-color: #36425f;
     border: solid black 3px;
     border-radius: 10px;
-    z-index: -2;
 }
 
 #titulo-servicos {
@@ -196,10 +275,13 @@ main {
 }
 
 #container-propostas {
+    margin-top: 2rem;
     grid-column: 1/4;
     grid-row: 2/3;
     display: flex;
     gap: 2rem;
+    position: relative;
+    z-index: 0;
 }
 
 #frame-proposta {
@@ -229,7 +311,6 @@ main {
     z-index: -1;
     transition: 200ms ease-in-out;
     padding: 4px;
-    animation: 3s spin linear infinite;
 }
 
 #frame-proposta:last-child::after, #frame-proposta:last-child::before {
@@ -238,7 +319,7 @@ main {
 
 #frame-proposta::before  {
     filter: blur(1.5rem);
-    opacity: 0.5;
+    opacity: 0;
 }
 
 @keyframes spin {
@@ -248,6 +329,16 @@ main {
     to {
         --angle: 360deg;
     }
+}
+
+#frame-proposta:hover::after {
+    animation: 2.5s spin linear infinite;
+}
+
+#frame-proposta:hover::before {
+    opacity: 0.75;
+    animation: 2.5s spin linear infinite;
+    
 }
 
 #frame-proposta h4 {

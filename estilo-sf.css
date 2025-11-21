@@ -93,9 +93,10 @@
         flex-direction: column;
     }
 
-    #container-propostas div {
+    #frame-proposta {
         margin: 0;
         width: 50vw;
+        height: 20vh;
         align-self: center;
     }
 
