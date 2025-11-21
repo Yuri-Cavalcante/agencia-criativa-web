@@ -6,7 +6,3 @@ window.addEventListener('scroll', () => {
         header.classList.remove('header-fosco');
     }
 })
-
-document.getElementById('frame-proposta').addEventListener('mouseover', ()=> {
-    console.log('aaa')
-})
