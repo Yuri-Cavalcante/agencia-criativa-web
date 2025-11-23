@@ -24,48 +24,54 @@
 
     /* HEADER */
     
-    header {
+    .header {
         padding: 1rem 3rem;
         flex-direction: column;
     }    
     
-    nav {
+    .header__nav {
         margin: 0;
         padding: 0.5rem;
         gap: 1rem;
     }
 
-    button {
+    .header__button {
         padding: 0.5rem;
         font-size: 0.75rem;
     }
 
     /* MAIN */
 
-    main {
+    .main {
         margin-top: 11rem;
     }
 
-    #home {
+    .home {
         margin: 0.5rem 1rem;
+    }
+
+    /* SOBRE */
+
+    .sobre__p {
+        text-align: center;
     }
 
     /* SERVICOS */
 
-    #titulo-servicos{
+    .servicos__title-wrapper{
         margin-bottom: 2rem;
     }
 
-    #fase-reconhecimento {
+    .servicos__reconhecimento {
         display: none;
     }
 
-    #fase-reconhecimento-sf {
+    .servicos__reconhecimento-sf {
         display: flex;
         flex-direction: column;
     }
 
-    #fase-reconhecimento-sf img {
+    .servicos__reconhecimento-sf img {
         margin-bottom: 1rem;
         width: 65%;
         align-self: center;

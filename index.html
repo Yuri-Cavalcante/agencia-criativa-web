@@ -9,52 +9,52 @@
     <link rel="stylesheet" href="estilo-ts.css">
 </head>
 <body>
-    <header>
-        <div id="logo-nav">
+    <header class="header">
+        <div class="header__logo">
             <img src="imagens/logo.png" alt="" >
         </div>
-        <nav>
-            <a href="#sobre"><button>Sobre</button></a>
-            <a href="#servicos"><button>Serviços</button></a>
-            <a href="#depoimentos"><button>Depoimentos</button></a>
-            <a href="#contato"><button>Contato</button></a>
+        <nav class="header__nav">
+            <a href="#sobre"><button class="header__button">Sobre</button></a>
+            <a href="#servicos"><button class="header__button">Serviços</button></a>
+            <a href="#depoimentos"><button class="header__button">Depoimentos</button></a>
+            <a href="#contato"><button class="header__button">Contato</button></a>
         </nav>
     </header>
-    <main>
-        <section id="home">
-            <div>
-                <h1>Bem-vindo a Agência Criativa Web</h1>
+    <main class="main">
+        <section class="home">
+            <div class="home__title-wrapper">
+                <h1 class="home__title">Bem-vindo a Agência Criativa Web</h1>
             </div>
-            <p>Uma agêcia de serviços de design gráfico para desenvolvedores.</p>
+            <p class="home__subtitle">Uma agêcia de serviços de design gráfico para desenvolvedores.</p>
         </section>
 
-        <section id="sobre">
+        <section class="sobre">
             <h2>Trabalho e Missão</h2>
-            <p>Alguns dos desafios que muitos deselvolvedores já passaram são a estética e a arte.</p>
-            <p>Muitos tem pouco ou nenhum conhecimento e prática com design, o que impacta muito na produtivida e na qualidade do produto final, um bom programa sem um bom apelo visual perde muito de seu potencial, e nosso objeto é quebrar essa rocha.</p>
-            <p>Oferecemos serviços de design gráfico personalizados e feitos sob medida para cada cliente.</p>
+            <p class="sobre__p">Alguns dos desafios que muitos deselvolvedores já passaram são a estética e a arte.</p>
+            <p class="sobre__p">Muitos tem pouco ou nenhum conhecimento e prática com design, o que impacta muito na produtivida e na qualidade do produto final, um bom programa sem um bom apelo visual perde muito de seu potencial, e nosso objeto é quebrar essa rocha.</p>
+            <p class="sobre__p">Oferecemos serviços de design gráfico personalizados e feitos sob medida para cada cliente.</p>
         </section>
-        <section id="servicos">
-            <div id="titulo-servicos">
+        <section class="servicos">
+            <div class="servicos__title-wrapper">
                 <h2>Serviços</h2>
                 <p>Entendemos que o melhor jeito de resolver os problemas de um cliente é conhecendo seu contexto, assim nossa tratativa é feita em 3 fases,s reconhecimento, proposta, e aplicação.</p>
             </div>
 
-            <div id="fase-reconhecimento">
+            <div class="servicos__reconhecimento">
                 <img src="imagens/pesquisa.png" alt="">
-                <div>
+                <div class="servicos__reconhecimento-title-wrapper">
                     <h3>Reconhecimento</h3>
                     <p>Nossos assessores e analistas vão iniciar o processo de reconhecimento, eles estudarão seu caso(in loco se requisitado) e vão listar soluções de acordo com suas necessidades.</p>
                 </div>
             </div>
             
-            <div id="fase-reconhecimento-sf">
+        <div class="servicos__reconhecimento-sf">
                 <h3>Reconhecimento</h3>
                 <img src="imagens/pesquisa.png" alt="">                    
                 <p>Nossos assessores e analistas vão iniciar o processo de reconhecimento, eles estudarão seu caso(in loco se requisitado) e vão listar soluções de acordo com suas necessidades.</p>
             </div>
 
-            <div id="divisoria"></div>
+            <div class="divisoria"></div>
 
             <div id="fase-proposta">
                 <div id="texto-proposta">
@@ -109,7 +109,7 @@
                 </div>
             </div>
 
-            <div id="divisoria"></div>
+            <div class="divisoria"></div>
 
             <div id="fase-aplicacao">                
                 <img src="imagens/aplicacao.png" alt="">
