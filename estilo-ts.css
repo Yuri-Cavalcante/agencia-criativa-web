@@ -38,7 +38,7 @@
 
     /* MAIN */
 
-    .main {
+    main {
         margin-top: 15rem;
     }
 
@@ -54,18 +54,18 @@
     
     /* PROPOSTA */
 
-    #texto-proposta {
+    .servicos__prop-title-wrapper {
         padding-bottom: 1rem;
     }
 
-    #container-propostas {
+    .servicos__prop-container {
         margin-top: 1rem;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
     }
     
-    #container-propostas div {
+    .servicos__container-item {
         width: 33vw;
     }
 

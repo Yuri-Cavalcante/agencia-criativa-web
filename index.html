@@ -14,13 +14,13 @@
             <img src="imagens/logo.png" alt="" >
         </div>
         <nav class="header__nav">
-            <a href="#sobre"><button class="header__button">Sobre</button></a>
-            <a href="#servicos"><button class="header__button">Serviços</button></a>
-            <a href="#depoimentos"><button class="header__button">Depoimentos</button></a>
-            <a href="#contato"><button class="header__button">Contato</button></a>
+            <a href="#sobre-path"><button class="header__button">Sobre</button></a>
+            <a href="#servicos-path"><button class="header__button">Serviços</button></a>
+            <a href="#depoimentos-path"><button class="header__button">Depoimentos</button></a>
+            <a href="#contato-path"><button class="header__button">Contato</button></a>
         </nav>
     </header>
-    <main class="main">
+    <main>
         <section class="home">
             <div class="home__title-wrapper">
                 <h1 class="home__title">Bem-vindo a Agência Criativa Web</h1>
@@ -28,13 +28,13 @@
             <p class="home__subtitle">Uma agêcia de serviços de design gráfico para desenvolvedores.</p>
         </section>
 
-        <section class="sobre">
+        <section class="sobre" id="sobre-path">
             <h2>Trabalho e Missão</h2>
             <p class="sobre__p">Alguns dos desafios que muitos deselvolvedores já passaram são a estética e a arte.</p>
             <p class="sobre__p">Muitos tem pouco ou nenhum conhecimento e prática com design, o que impacta muito na produtivida e na qualidade do produto final, um bom programa sem um bom apelo visual perde muito de seu potencial, e nosso objeto é quebrar essa rocha.</p>
             <p class="sobre__p">Oferecemos serviços de design gráfico personalizados e feitos sob medida para cada cliente.</p>
         </section>
-        <section class="servicos">
+        <section class="servicos" id="servicos-path">
             <div class="servicos__title-wrapper">
                 <h2>Serviços</h2>
                 <p>Entendemos que o melhor jeito de resolver os problemas de um cliente é conhecendo seu contexto, assim nossa tratativa é feita em 3 fases,s reconhecimento, proposta, e aplicação.</p>
@@ -47,8 +47,8 @@
                     <p>Nossos assessores e analistas vão iniciar o processo de reconhecimento, eles estudarão seu caso(in loco se requisitado) e vão listar soluções de acordo com suas necessidades.</p>
                 </div>
             </div>
-            
-        <div class="servicos__reconhecimento-sf">
+    
+            <div class="servicos__reconhecimento-sf">
                 <h3>Reconhecimento</h3>
                 <img src="imagens/pesquisa.png" alt="">                    
                 <p>Nossos assessores e analistas vão iniciar o processo de reconhecimento, eles estudarão seu caso(in loco se requisitado) e vão listar soluções de acordo com suas necessidades.</p>
@@ -56,54 +56,54 @@
 
             <div class="divisoria"></div>
 
-            <div id="fase-proposta">
-                <div id="texto-proposta">
+            <div class="servicos__proposta">
+                <div class="servicos__prop-title-wrapper">
                     <h3>Proposta</h3>
                     <p>Com base nos resultados, vamos ofertar o serviço que for mais adequado, ou caso seja, montar um serviço totalmente personalizado junto ao cliente. NA PRIMEIRA E SEGUNDA FASE NÃO SERÁ COBRADA NENHUMA TAXA OU PAGAMENTO.</p>
                 </div>
                 
-                <img src="imagens/proposta.png" alt="">
+                <img class="servicos__prop-img" src="imagens/proposta.png" alt="">
 
-                <div id="container-propostas">
-                    <div id="frame-proposta">  
-                        <h4>Serviço de demanda única</h4>
-                        <p>Para quem precisa um serviço específico, certo e rápido, um preço certo por um serviço certo.</p>                                        
+                <div class="servicos__prop-container">
+                    <div class="servicos__container-item">  
+                        <h4 class="servicos__container-title">Serviço de demanda única</h4>
+                        <p class="servicos__container-p">Para quem precisa um serviço específico, certo e rápido, um preço certo por um serviço certo.</p>                                        
                     </div>
-                    <div id="frame-proposta">
-                        <h4>Serviço personalizado</h4>
-                        <p>Trabalho de acordo com o contexto e necessidades do cliente, flexibilidade e eficiência.</p>
+                    <div class="servicos__container-item">
+                        <h4 class="servicos__container-title">Serviço personalizado</h4>
+                        <p class="servicos__container-p">Trabalho de acordo com o contexto e necessidades do cliente, flexibilidade e eficiência.</p>
                     </div>
-                    <div id="frame-proposta">
-                        <h4>Plano de serviço Temporário</h4>
-                        <p>Serviços por um período de tempo determinado, excelente para trabalhar com prazos e entregas.</p>  
+                    <div class="servicos__container-item">
+                        <h4 class="servicos__container-title">Plano de serviço Temporário</h4>
+                        <p class="servicos__container-p">Serviços por um período de tempo determinado, excelente para trabalhar com prazos e entregas.</p>  
                     </div>
-                    <div id="frame-proposta"> 
-                        <h4>Plano de serviço Fixo</h4>
-                        <p>Serviços por tempo indeterminado, perfeito para projetos de alto calibre e de longo prazo.</p>
+                    <div class="servicos__container-item servicos__container-item--special"> 
+                        <h4 class="servicos__container-title">Plano de serviço permanete</h4>
+                        <p class="servicos__container-p">Serviços por tempo indeterminado, perfeito para projetos de alto calibre e de longo prazo.</p>
                     </div>
                 </div>
             </div>
 
-            <div id="fase-proposta-sf">
+            <div class="servicos__prop-container-sf">
                 <h3>Proposta</h3>
-                <img src="imagens/proposta.png" alt="">
+                <img class="servicos__container-img" src="imagens/proposta.png" alt="">
                 <p>Com base nos resultados, vamos ofertar o serviço que for mais adequado, ou caso seja, montar um serviço totalmente personalizado junto ao cliente. NA PRIMEIRA E SEGUNDA FASE NÃO SERÁ COBRADA NENHUMA TAXA OU PAGAMENTO.</p>
                 
-                <div id="container-propostas">
-                    <div id="frame-proposta">  
+                <div class="servicos__prop-container">
+                    <div class="servicos__container-item">  
                         <h4>Serviço de demanda única</h4>
                         <p>Para quem precisa um serviço específico, certo e rápido, um preço certo por um serviço certo.</p>                                        
                     </div>
-                    <div id="frame-proposta">
+                    <div class="servicos__container-item">
                         <h4>Serviço personalizado</h4>
                         <p>Trabalho de acordo com o contexto e necessidades do cliente, flexibilidade e eficiência.</p>
                     </div>
-                    <div id="frame-proposta">
+                    <div class="servicos__container-item">
                         <h4>Plano de serviço Temporário</h4>
                         <p>Serviços por um período de tempo determinado, excelente para trabalhar com prazos e entregas.</p>  
                     </div>
-                    <div id="frame-proposta">
-                        <h4>Plano de serviço Fixo</h4>
+                    <div class="servicos__container-item servicos__container-item--special">
+                        <h4>Plano de serviço permanete</h4>
                         <p>Serviços por tempo indeterminado, perfeito para projetos de alto calibre e de longo prazo.</p>
                     </div>
                 </div>
@@ -111,72 +111,68 @@
 
             <div class="divisoria"></div>
 
-            <div id="fase-aplicacao">                
+            <div class="servicos__aplicacao">                
                 <img src="imagens/aplicacao.png" alt="">
-                <div>
+                <div class="servicos__aplicacao-wrapper">
                     <h3>Aplicação</h3>
                     <p>Essa é a fase onde o serviço é feito, será designado um supervisor pro seu projetado, ele será sua linha direta com a agêcia, todo o processo de feedback, dúvidas, mudanças e etc serão tratadas com ele, assim sendo até a finalização do projeto.</p>
                 </div>
             </div>            
 
-            <div id="fase-aplicacao-sf">
+            <div class="servicos__aplicacao-sf">
                 <h3>Aplicação</h3>
-                <img src="imagens/aplicacao.png" alt="">
+                <img class="servicos__apl-img" src="imagens/aplicacao.png" alt="">
                 <p>Essa é a fase onde o serviço é feito, será designado um supervisor pro seu projetado, ele será sua linha direta com a agêcia, todo o processo de feedback, dúvidas, mudanças e etc serão tratadas com ele, assim sendo até a finalização do projeto.</p>
             </div>
         </section>
 
-        <section id="depoimentos">
+        <section class="depoimentos" id="depoimentos-path">
             <h2>Depoimentos de clientes</h2>
 
-            <div id="container-avaliacao">
-                <div id="perfil-nome">
+            <div class="depoimentos__container">
+                <div class="depoimentos__perfil">
                     <img src="imagens/foto-perfil.png" alt="">
-                    <h4>Maurício Almeida da Costa - desenvolver em Kotlin</h4>
+                    <h4 class="depoimentos__perfil-title">Maurício Almeida da Costa - desenvolver em Kotlin</h4>
                 </div>
                 <p>Sempre tive dificuldade em questões de identidade visual, qual ícone fica melhor, qual resolução usar, qual paleta de cor usar. Isso custava muito tempo e atrasava meus lançamentos, mas depois que conheci a Criativa minha produtividade quase triplicou.</p>
             </div>
 
-            <div id="container-avaliacao">
-                <div id="perfil-nome">
+            <div class="depoimentos__container">
+                <div class="depoimentos__perfil">
                     <img src="imagens/foto-perfil-2.png" alt="">
-                    <h4>Pedro Ribeiro Miller - desenvolvedor JavaScript fullstack</h4>
+                    <h4 class="depoimentos__perfil-title">Pedro Ribeiro Miller - desenvolvedor JavaScript fullstack</h4>
                 </div>
                 <p>Dominar qualquer software de design gráfico leva muito tempo e energia, o problema é que programar também,e se você tenta fazer tudo acaba que nada sai da melhor forma que poderia. Quando contratei a Criativa fiquei recioso de não entenderem minha estética e estilo, essa foi uma das vezes que gostei de estar errado, agora sou um cliente fiel e permanete.</p>
             </div>
 
-            <div id="container-avaliacao">
-                <div id="perfil-nome">
+            <div class="depoimentos__container">
+                <div class="depoimentos__perfil">
                     <img src="imagens/foto-perfil-3.png" alt="">
-                    <h4>André Cavalcante Braga Neto - desenvolvedor em C# e C++</h4>
+                    <h4 class="depoimentos__perfil-title">André Cavalcante Braga Neto - desenvolvedor em C# e C++</h4>
                 </div>
                 <p>Sendo sincero, sempre tive muita preguiça de fazer qualquer coisa relacionada a arte, desenho, design, modelagem e etc, e quando você faz alguma coisa de má vontado, o resultado fica longe de OK. A Criativa me ofereu uma solução eficiente por um preço rasoável,desde então eles tem minha lealdade como cliente.</p>
             </div>
         </section>
     </main>
 
-    <footer id="contato">
-        <div id="container-info-formulario">
-            <div>
-                <h4>Endereço: Avenida Lisbela - quadra 12 lote 3</h4>
-                <h4>Telefone: 14 98275-4032</h4>
-                <h4>E-mail: criat1v4Web@gmail.com</h4>                
-                <h4>Instagram: @Criativa_Web</h4>
-            </div>
-            <div id="formulario">
-                <h4>Ficou interessado ? Envie uma mensagem agora !</h4>
-                <form action="">
-                    <label for="nome">Nome:</label>
-                    <input type="text" name="nome">
-                    <label for="email">E-mail:</label>
-                    <input type="email" name="email">
-                    <label for="msg">Mensagem:</label>
-                    <textarea name="msg" id="" rows="10"></textarea>
-                    
-                    <button type="submit">ENVIAR</button>
-                </form>
-            </div>
+    <footer class="footer" id="contato-path">
+        <div class="footer__info">
+            <h4>Endereço: Avenida Lisbela - quadra 12 lote 3</h4>
+            <h4>Telefone: 14 98275-4032</h4>
+            <h4>E-mail: criat1v4Web@gmail.com</h4>                
+            <h4>Instagram: @Criativa_Web</h4>
         </div>
+        <form class="footer__form">
+            <h4>Ficou interessado ? Envie uma mensagem agora !</h4>
+                <label class="footer__form-label" for="nome">Nome:</label>
+                <input class="footer__form-input" type="text" name="nome">
+                <label class="footer__form-label" for="email">E-mail:</label>
+                <input class="footer__form-input" type="email" name="email">
+                <label class="footer__form-label" for="msg">Mensagem:</label>
+                <textarea class="footer__form-ta" name="msg" id="" rows="10"></textarea>
+                
+                <button class="form__button" type="submit">ENVIAR</button>
+        </form>
     </footer>
     <script src="script.js"></script>
 </body>

@@ -42,7 +42,7 @@
 
     /* MAIN */
 
-    .main {
+    main {
         margin-top: 11rem;
     }
 
@@ -79,71 +79,72 @@
     
     /* PROPOSTA */
     
-    #fase-proposta {
+    .servicos__proposta {
         display: none;
     }
 
-    #fase-proposta-sf {
+    .servicos__prop-container-sf {
         margin: 0;
         display: flex;
         flex-direction: column;
     }
 
-    #fase-proposta-sf img {
+    .servicos__container-img {
         width: 65%;
         align-self: center;
     }
 
-    #container-propostas {
+    .servicos__prop-container {
         margin-top: 2rem;
         flex-direction: column;
     }
 
-    #frame-proposta {
+    .servicos__container-item {
         margin: 0;
         width: 50vw;
-        height: 20vh;
+        height: auto;
         align-self: center;
     }
 
     /* APLICACAO */
 
-    #fase-aplicacao {
+    .servicos__aplicacao {
         display: none;
     }
 
-    #fase-aplicacao-sf {
+    .servicos__aplicacao-sf {
         display: flex;
         flex-direction: column;
     }
 
-    #fase-aplicacao-sf img {
+    .servicos__apl-img {
         width: 65%;
         align-self: center;
     }
 
     /* DEPOIMENTOS */
 
-    #container-avaliacao {
+    .depoimentos__container {
         margin-bottom: 2rem;
     }
 
-    #perfil-nome h4 {
-        font-size: 1rem;      
+    .depoimentos__perfil-title {
+        margin: 0;
+        font-size: 1rem;
     }
 
     /* CONTATO */
 
-    #container-info-formulario {
+    .footer {
         display: flex;
         flex-direction: column;
     }
 
-    #container-info-formulario div {
+    .footer__info {
         gap: 0;
     }
 
-    #formulario {
+    .footer__form {
         margin-top: 2rem;
     }
 }
