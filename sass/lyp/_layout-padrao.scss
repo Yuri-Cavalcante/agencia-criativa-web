@@ -1,3 +1,5 @@
+@use '../vars';
+
 /* GERAL */
 * { 
     box-sizing: border-box;
@@ -11,7 +13,7 @@ body, html {
 }
 
 body {
-    background-color: #273555;
+    background-color: vars.$cor-fundo;
     color: #dcdcdc;
 }
 
