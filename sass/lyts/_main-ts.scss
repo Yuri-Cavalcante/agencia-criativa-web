@@ -1,0 +1,39 @@
+@media (min-width:601px) and (max-width:900px){
+    /* MAIN */
+
+    main {
+        margin-top: 15rem;
+    }
+
+    .home {
+        margin: 0.5rem 1rem;
+    }
+
+    /* SOBRE */
+
+    .sobre__p {
+        text-align: center;
+    }
+
+    .servicos {
+        &__prop-title-wrapper {
+            padding-bottom: 1rem;
+        }
+
+        &__prop-container {
+            margin-top: 1rem;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        &__container-item {
+            width: 33vw;
+        }
+    }
+    
+    /* PROPOSTA */
+
+    
+
+}

@@ -1,0 +1,101 @@
+@media (max-width: 600px){
+    /* MAIN */
+
+    main {
+        margin-top: 11rem;
+    }
+
+    .home {
+        margin: 0.5rem 1rem;
+    }
+
+    /* SOBRE */
+
+    .sobre__p {
+        text-align: center;
+    }
+
+    /* SERVICOS */
+
+    .servicos {
+        &__title-wrapper{
+            margin-bottom: 2rem;
+        }
+
+        &__reconhecimento {
+            display: none;
+        }
+
+        &__reconhecimento-sf {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__reconhecimento-sf img {
+            margin-bottom: 1rem;
+            width: 65%;
+            align-self: center;
+        }
+
+        // PROPOSTAS
+
+        &__proposta {
+            display: none;
+        }
+
+        &__prop-container-sf {
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__container-img {
+            width: 65%;
+            align-self: center;
+        }
+
+        &__prop-container {
+            margin-top: 2rem;
+            flex-direction: column;
+        }
+
+        &__container-item {
+            margin: 0;
+            width: 50vw;
+            height: auto;
+            align-self: center;
+        }
+
+        /* APLICACAO */
+
+        &__aplicacao {
+            display: none;
+        }
+
+        &__aplicacao-sf {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__apl-img {
+            width: 65%;
+            align-self: center;
+        }
+    }
+
+    /* DEPOIMENTOS */
+
+    .depoimentos {
+        &__container {
+            margin-bottom: 2rem;
+        }
+
+        &__perfil-title {
+            margin: 0;
+            font-size: 1rem;
+        }
+    }
+} 
+
+
+    

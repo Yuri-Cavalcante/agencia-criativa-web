@@ -1,0 +1,44 @@
+/* CONTATO  */
+
+.footer {
+    padding: 2rem;
+    background-color: #3f4d6f;
+    display: flex;
+    justify-content: space-around;
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        justify-content: center;
+    }
+
+    &__form {
+        padding: 0 2rem;
+        display: flex;
+        flex-direction: column;  
+        gap: .5rem;
+    }
+
+    &__form-label {
+        font-size: 1.5rem;
+    }
+
+    &__form-input, &__form-ta{
+        font-size: 1rem;
+    }
+
+    &__form-button {
+        font-size: 1.3rem;
+        padding: .4rem;
+        width: fit-content;
+        align-self: center;
+        transition: 300ms ease;
+    }
+
+    &__form-button:hover {
+        background-color: rgb(146, 222, 32);
+    }
+}
+
+

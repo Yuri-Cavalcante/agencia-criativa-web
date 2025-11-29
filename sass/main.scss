@@ -1,5 +1,17 @@
-@use 'lyp/layout-padrao';
-@use 'lysf/layout-sf';
-@use 'lyts/layout-ts';
+// layout padrão
+@use 'lyp/header-p';
+@use 'lyp/main-p';
+@use 'lyp/footer-p';
 
-@use 'vars';
+// layout smartphones
+
+// @use 'lysf/layout-sf';
+@use 'lysf/header-sf';
+@use 'lysf/main-sf';
+@use 'lysf/footer-sf';
+
+// layout tablets
+
+// @use 'lyts/layout-ts';
+@use 'lyts/header-ts';
+@use 'lyts/main-ts';
