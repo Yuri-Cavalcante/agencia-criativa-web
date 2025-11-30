@@ -1,19 +1,18 @@
 @use 'base';
+@use 'components';
 
-// layout 
-@use 'lyp/header-p';
-@use 'lyp/main-p';
-@use 'lyp/footer-p';
+// layout padrao
+@use 'layout padrao/header-p';
+@use 'layout padrao/main-p';
+@use 'layout padrao/footer-p';
 
 // layout smartphones
 
-// @use 'lysf/layout-sf';
-@use 'lysf/header-sf';
-@use 'lysf/main-sf';
-@use 'lysf/footer-sf';
+@use 'layout smartphones/header-sf';
+@use 'layout smartphones/main-sf';
+@use 'layout smartphones/footer-sf';
 
 // layout tablets
 
-// @use 'lyts/layout-ts';
-@use 'lyts/header-ts';
-@use 'lyts/main-ts';
+@use 'layout tablets/header-ts';
+@use 'layout tablets/main-ts';

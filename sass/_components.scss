@@ -1,0 +1,11 @@
+@use 'vars';
+
+// DIVISORIA
+
+.divisoria {
+    margin: 2rem 0;
+    height: 5px;
+    width: 100%;
+    background: linear-gradient(90deg, black, vars.$branco-base 45% 55%, black);
+    border-radius: 5px;
+}

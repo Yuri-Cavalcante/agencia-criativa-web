@@ -1,0 +1,21 @@
+@mixin flex-padrao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin anim-logo {
+    content: '';
+    height: .5rem;
+    width: .5rem;
+    background-color: #ff7300;
+    opacity: 0;
+    border-radius: 1rem;
+    position: absolute;
+    transition: 400ms ease-in-out;
+}

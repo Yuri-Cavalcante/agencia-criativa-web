@@ -95,9 +95,9 @@ p {
   position: fixed;
   top: 0px;
   display: flex;
-  gap: 1rem;
   align-items: center;
   justify-content: center;
+  gap: 1rem;
   z-index: 1;
   background-color: rgb(72, 90, 136);
 }
@@ -114,12 +114,12 @@ p {
   width: 0.5rem;
   background-color: #ff7300;
   opacity: 0;
-  left: 0;
-  bottom: 0;
-  translate: 0 125%;
   border-radius: 1rem;
   position: absolute;
   transition: 400ms ease-in-out;
+  left: 0;
+  bottom: 0;
+  translate: 0 125%;
 }
 .header__logo:hover::after {
   width: 100%;
@@ -131,11 +131,11 @@ p {
   width: 0.5rem;
   background-color: #ff7300;
   opacity: 0;
-  right: 0;
-  translate: 0 -125%;
   border-radius: 1rem;
   position: absolute;
   transition: 400ms ease-in-out;
+  right: 0;
+  translate: 0 -125%;
 }
 .header__logo:hover:before {
   width: 100%;

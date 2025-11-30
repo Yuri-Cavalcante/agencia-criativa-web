@@ -1,14 +1,7 @@
 @use '../vars';
+@use '../mixins';
 
 
-
-.divisoria {
-    margin: 2rem 0;
-    height: 5px;
-    width: 100%;
-    background: linear-gradient(90deg, black, vars.$branco-base 45% 55%, black);
-    border-radius: 5px;
-}
 
 /* HEADER */
 
@@ -17,10 +10,8 @@
     padding: 1rem;
     position: fixed;
     top: 0px;
-    display: flex;
+    @include mixins.flex-padrao;
     gap: 1rem;
-    align-items: center;
-    justify-content: center;
     z-index: 1;
     background-color: rgb(72, 90, 136);
 
@@ -34,17 +25,10 @@
     }
 
     &__logo::after {
-        content: '';
-        height: .5rem;
-        width: .5rem;
-        background-color: #ff7300;
-        opacity: 0;
+        @include mixins.anim-logo;
         left: 0;
         bottom: 0;
         translate: 0 125%;
-        border-radius: 1rem;
-        position: absolute;
-        transition: 400ms ease-in-out;
     }
 
     &__logo:hover::after {
@@ -53,16 +37,10 @@
     }
 
     &__logo::before {
-        content: '';
-        height: .5rem;
-        width: .5rem;
-        background-color: #ff7300;
-        opacity: 0;
+        @include mixins.anim-logo;
+
         right: 0;
         translate: 0 -125%;
-        border-radius: 1rem;
-        position: absolute;
-        transition: 400ms ease-in-out;
     }
 
     &__logo:hover:before {

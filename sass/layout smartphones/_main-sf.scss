@@ -1,3 +1,5 @@
+@use '../mixins';
+
 @media (max-width: 600px){
     /* MAIN */
 
@@ -27,8 +29,7 @@
         }
 
         &__reconhecimento-sf {
-            display: flex;
-            flex-direction: column;
+            @include mixins.flex-column;
         }
 
         &__reconhecimento-sf img {
@@ -45,8 +46,7 @@
 
         &__prop-container-sf {
             margin: 0;
-            display: flex;
-            flex-direction: column;
+            @include mixins.flex-column;
         }
 
         &__container-img {
@@ -73,8 +73,7 @@
         }
 
         &__aplicacao-sf {
-            display: flex;
-            flex-direction: column;
+            @include mixins.flex-column;
         }
 
         &__apl-img {
